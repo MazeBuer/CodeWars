@@ -3,7 +3,7 @@ Cat Years: 15 cat years for the first year ; +9 cat years for the second year ; 
 Dog Years: 15 dog years for the first year ; +9 dog years for the second year ; +5 dog years for each year after
 P: we will be given a year
 R: return the dog, cat and human years corespending with that year
-E: year = 2 [2, 24, 24] ; year =3 [3, 28, 29]
+E: year = 2 [2, 24, 24] ;
 P: find the equation to return the correct animal year, retur in array [human, cat, dog]*/
 
 var humanYearsCatYearsDogYears = function(humanYears) {
