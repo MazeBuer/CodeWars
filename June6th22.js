@@ -7,4 +7,15 @@ P: split('') string to make an array. Loop thru array and check if any letters r
 function isIsogram(str) {
     let string = str.toLowerCase().split('')
       return string.every( (c,i) => string.indexOf(c)==i)
-  }
+}
+
+
+function isIsogram(str){
+    var i, j;
+    str = str.toLowerCase();
+    for(i = 0; i < str.length; ++i)
+      for(j = i + 1; j < str.length; ++j)
+        if(str[i] === str[j])
+          return false;
+    return true;
+}
