@@ -2,8 +2,8 @@
 P: */
 
 function XO(str) {
-    let string = str.toLowerCase().split('')
-    return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length
+    let strg = str.toLowerCase().split('')
+    return strg.filter(x => x === 'x').length === strg.filter(x => x === 'o').length
 }
 
 console.log(XO('xopjgjo'))
