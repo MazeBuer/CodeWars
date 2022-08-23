@@ -4,6 +4,8 @@ R: return the average of numbers in the array
 E: [3,4,5] -> 4 
 P: add all integers in the array with reduce(); divide by length of array; */
 
-let find_average = array => array.reduce( (a,b) => a+b, 0) / array.length;
+let find_average = array => {
+    array.length > 0 ? array.reduce( (a,b) => a+b, 0) / array.length : 0
+}
 
 console.log(find_average([1,3,5,6]))
