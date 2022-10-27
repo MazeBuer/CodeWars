@@ -18,6 +18,9 @@ string ( ); only one ( and more than once is );
 
 let repeatChar = str => str.toLowerCase().split('').map( (e) => str.indexOf(e) === str.lastIndexOf(e) ? '(' : ')').join('')
 
+//optimized alogrithms 
+/* hasmap - */
+
 console.log( repeatChar('din'), '(((')
 console.log( repeatChar('beet'), '())(')
 console.log( repeatChar('recede'), '()()()')
