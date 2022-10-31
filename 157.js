@@ -10,13 +10,13 @@ function oddCount (n) {
 //loop thru array between 0 and n (not counting n)
 //push elements that are not even 
 //return length of new array
-    let array = [];
+    const array = [];
     for(let i=0; i < n; i++) {
         if(i % 2 !== 0) {
-            array.push(i)
+            array.push(i);
         }
     }
-    return array.length
+    return array.length;
 
 }
 
