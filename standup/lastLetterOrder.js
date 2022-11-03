@@ -17,7 +17,14 @@ returing the string given in order of last letter; returing an array (not string
 // return unSorted.map( e => e.reverse().join(''))
 // }
 
-let lastLetterOrder = str => str.split(' ').map( e => e.split('').reverse()).sort().map(l => l.reverse().join(''))
+        // Char Code At
+// function lastLetterOrder (str) {
+//     //split and sort
+//     //sort -> by charCodeAt
+//     return str.split(' ').sort( (a,b) => a.charCodeAt(a.length-1) - b.charCodeAt(b.length-1))
+// }
+
+let lastLetterOrder = str => str.split(' ').sort( (a,b) => a.charCodeAt(a.length-1) - b.charCodeAt(b.length-1))
 
 
 console.log(lastLetterOrder('man i need a taxi up to ubud'), ['a', 'need', 'ubud', 'i', 'taxi', 'man', 'to', 'up'])
