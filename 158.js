@@ -4,6 +4,8 @@ function isSquare (arr) {
     return arr.length > 0 ? arr.every( (e) => Math.sqrt(e) % 1 == 0) : undefined
 }
 
+
+
 console.log(isSquare([1, 4, 9, 16, 25, 36]))
 console.log(isSquare([1, 2, 3, 4, 5, 6]))
 console.log(isSquare([]))
