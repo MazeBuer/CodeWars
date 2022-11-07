@@ -12,7 +12,7 @@ return ( or ) based on repeated or not. ignore capitalization
 // return array.map( e => array.indexOf(e) == array.lastIndexOf(e) ? '(' : ')' ).join('')
 // }
 
-let dupElem = word => word.toLowerCase().split('').map( e => word.indexOf(e) == word.lastIndexOf(e) ? '(' : ')').join('')
+let dupElem = word => word.toLowerCase().split('').map( (e,i,w) => w.indexOf(e) == w.lastIndexOf(e) ? '(' : ')').join('')
 
 console.log(dupElem('din'), '(((')
 console.log(dupElem('recede'), '()()()')
