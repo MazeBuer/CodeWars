@@ -16,7 +16,7 @@ string ( ); only one ( and more than once is );
 //     //joining back array into a string
 // }
 
-let repeatChar = str => str.toLowerCase().split('').map( (e) => str.indexOf(e) === str.lastIndexOf(e) ? '(' : ')').join('')
+let repeatChar = str => str.toLowerCase().split('').map( (e,i,a) => a.indexOf(e) === a.lastIndexOf(e) ? '(' : ')').join('')
 
 //optimized alogrithms 
 /* hasmap - */
