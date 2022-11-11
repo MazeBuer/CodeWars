@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Basic Form - Contact and Sumbit button</h1>
+        <form action="POST">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="First Name" name="fname" required>
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Last Name" name="lname" require>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="div2">
+        <h1>Log In Password form - Turns password field into stars</h1>
+        <div clas="form2">
+            <form action="POST">
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" placeholder="First Name" name="fname" id="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" placeholder="Last Name" name="lname" id="lname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" pattern="(?=.*\d">
+                </div>
+                <button type="submit" id="submit">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <h1>Log In password with Special characters allowed only</h1>
+    </div>
+
+    <div>
+        <h1>Multiple Choice Form pick only 1</h1>
+    </div>
+
+    <div>
+        <h1>Multiple Choice pick more than one</h1>
+    </div>
+
+    <div>
+        <h1>Multiple Choice - When one selected a input field shows up</h1>
+    </div>
+
+    <div>
+        <h1>Feed Back form: Name, Email, Password, 2 Questions with Multiple Choice- New input pops up when choice is made for mulitple section, Date choice today and onward, input model number, pick location based on choices (pick from dropdown menu) </h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Box Model Hack */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing:border-box; 
+    font-family: Overlock, Nunito;
+}
+  
+  /* Clear fix hack */
+.clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+}
+  
+.clear {
+    clear: both;
+}
+
+.div2 {
+    border: 2px solid blue;
+    border-radius: 20px;
+}
