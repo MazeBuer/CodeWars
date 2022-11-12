@@ -62,6 +62,30 @@
 
     <div>
         <h1>Log In password with Special characters allowed only</h1>
+        <form action="./index.html" >
+            <div>
+                <label for="fullName">Full Name</label>
+                <input type="text" placeholder="Enter Full Name" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Valid Email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Input Password" name="password" id="psw" required>
+            </div>
+            <div class="message">
+                <h3>Must contain:</h3>
+                <p id="letter" class="invalid">A lowercase letter</p>
+                <p id="number" class="invalid">A number</p>
+                <p id="capital" class="invalid">A captial letter</p>
+                <p id="symbol" class="invalid"> A symbol: $%_;</p>
+                <p id="length" class="invalid">Minimum of 8 characters</p>
+            </div>
+            <div>
+                <button type="submit" name="submit" value="submit">Sign up</button>
+            </div>
     </div>
 
     <div>
@@ -79,5 +103,7 @@
     <div>
         <h1>Feed Back form: Name, Email, Password, 2 Questions with Multiple Choice- New input pops up when choice is made for mulitple section, Date choice today and onward, input model number, pick location based on choices (pick from dropdown menu) </h1>
     </div>
+
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
